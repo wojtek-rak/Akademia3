@@ -16,7 +16,7 @@ namespace CollectionsAndLinq
                 "likebomb", "roadavoid"};
             var count = 0;
 
-            count = users.Where(x => x.ToLower().Contains("xd")).Count();
+            //count = users.Where(x => x.ToLower().Contains("xd")).Count();
 
             Assert.AreEqual(3, count);
         }
@@ -27,17 +27,29 @@ namespace CollectionsAndLinq
         {
             var users = GetUsers();
             var count = 0;
-            var adoultUserList = new List<User>();
 
-            foreach (var user in users)
-            {
-                if (user.Age > 18)
-                {
-                    adoultUserList.Add(user);
-                }
-            }
+            var adoultUserList = new List<User>();
+            //var adoultUserList = users.Where(x => x.Age > 18).ToList();
 
             Assert.AreEqual(4, adoultUserList.Count);
+        }
+
+        [Test]
+        public void Get_Specyfic_User()
+        {
+            var users = GetUsers();
+            var age = 0;
+
+            User selectedUser = new User();
+            //var selectedUser = users.Where(x => x.Name == "jealouslewsomed")
+            //    .FirstOrDefault();
+
+            if (selectedUser != null)
+            {
+                age = selectedUser.Age;
+            }
+
+            Assert.AreEqual(12, age);
         }
 
 

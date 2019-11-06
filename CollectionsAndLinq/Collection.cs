@@ -37,15 +37,38 @@ namespace CollectionsAndLinq
             var count = 0;
             var adoultUserList = new List<User>();
 
+            //foreach (var user in users)
+            //{
+            //    if (user.Age > 18)
+            //    {
+            //        adoultUserList.Add(user);
+            //    }
+            //}
+
+            Assert.AreEqual(4, adoultUserList.Count);
+        }
+
+        [Test]
+        public void Get_Specyfic_User()
+        {
+            var users = GetUsers();
+            var age = 0;
+            User selectedUser = null;
+
             foreach (var user in users)
             {
-                if (user.Age > 18)
+                if (user.Name == "jealouslewsomed")
                 {
-                    adoultUserList.Add(user);
+                    selectedUser = user;
                 }
             }
 
-            Assert.AreEqual(4, adoultUserList.Count);
+            if(selectedUser != null)
+            {
+                age = selectedUser.Age;
+            }
+
+            Assert.AreEqual(12, age);
         }
 
 
