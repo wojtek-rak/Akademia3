@@ -15,4 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Akademia3\Akademia3.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Collections.cs" />
+  </ItemGroup>
 </Project>
