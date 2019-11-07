@@ -13,10 +13,24 @@ namespace CollectionsAndLinq
         {
             var users = new List<string>() { "malroXd", "dare", "roage",
                 "washbasinphxDone", "jealouslewsomed", "rashtoexd", "iffybalgy",
-                "likebomb", "roadavoid"};
+                "likebomb", "roadavoid", "malroXd"};
             var count = 0;
 
             //count = users.Where(x => x.ToLower().Contains("xd")).Count();
+
+            Assert.AreEqual(4, count);
+        }
+        //add ToLower()
+
+        [Test]
+        public void Search_xd_in_list_no_duplicates()
+        {
+            var users = new List<string>() { "malroXd", "dare", "roage",
+                "washbasinphxDone", "jealouslewsomed", "rashtoexd", "iffybalgy",
+                "likebomb", "roadavoid", "malroXd"};
+            var count = 0;
+
+            //count = users.ToHashSet().Where(x => x.ToLower().Contains("xd")).Count();
 
             Assert.AreEqual(3, count);
         }

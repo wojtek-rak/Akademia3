@@ -11,7 +11,7 @@ namespace Akademia3
             var count = 0;
             var users = new List<string>() { "malroXd", "dare", "roage",
                 "washbasinphxDone", "jealouslewsomed", "rashtoexd", "iffybalgy",
-                "likebomb", "roadavoid"};
+                "likebomb", "malroXd"};
 
             foreach (var user in users)
             {
