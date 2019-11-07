@@ -38,20 +38,18 @@ namespace CollectionsAndLinq
                 "likebomb", "roadavoid", "malroXd"};
             var count = 0;
 
-            //implementaton
-            var setUsers = new HashSet<string>(users);
-            foreach (var user in setUsers)
-            {
-                if (user.ToLower().Contains("xd"))
-                {
-                    count += 1;
-                }
-            }
-            //implementaton
+            //var setUsers = new HashSet<string>(users);
+            //foreach (var user in setUsers)
+            //{
+            //    if (user.ToLower().Contains("xd"))
+            //    {
+            //        count += 1;
+            //    }
+            //}
 
             Assert.AreEqual(3, count);
         }
-        //add ToLower()
+
 
         [Test]
         public void Get_Adoult_Users_List()
@@ -78,18 +76,18 @@ namespace CollectionsAndLinq
             var age = 0;
             User selectedUser = null;
 
-            foreach (var user in users)
-            {
-                if (user.Name == "jealouslewsomed")
-                {
-                    selectedUser = user;
-                }
-            }
+            //foreach (var user in users)
+            //{
+            //    if (user.Name == "jealouslewsomed")
+            //    {
+            //        selectedUser = user;
+            //    }
+            //}
 
-            if(selectedUser != null)
-            {
-                age = selectedUser.Age;
-            }
+            //if(selectedUser != null)
+            //{
+            //    age = selectedUser.Age;
+            //}
 
             Assert.AreEqual(12, age);
         }

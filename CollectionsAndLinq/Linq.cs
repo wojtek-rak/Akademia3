@@ -58,10 +58,10 @@ namespace CollectionsAndLinq
             //var selectedUser = users.Where(x => x.Name == "jealouslewsomed")
             //    .FirstOrDefault();
 
-            if (selectedUser != null)
-            {
-                age = selectedUser.Age;
-            }
+            //if (selectedUser != null)
+            //{
+            //    age = selectedUser.Age;
+            //}
 
             Assert.AreEqual(12, age);
         }
