@@ -92,6 +92,22 @@ namespace CollectionsAndLinq
             Assert.AreEqual(12, age);
         }
 
+        [Test]
+        public void Get_Specyfic_User_Dictionary()
+        {
+            var users = new Dictionary<int, string>()
+            {
+                {13567, "marek" },
+                {14532, "czarek" },
+                {13412, "warek"}
+            };
+
+            var userName = string.Empty;
+            //var userName = users[14532];
+
+            Assert.AreEqual("czarek", userName);
+        }
+
 
         private List<User> GetUsers()
         {
