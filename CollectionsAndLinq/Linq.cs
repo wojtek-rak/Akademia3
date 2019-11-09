@@ -84,6 +84,17 @@ namespace CollectionsAndLinq
             Assert.AreEqual(12, age);
         }
 
+        [Test]
+        public void Get_Average_of_User_age()
+        {
+            var users = GetUsers();
+            var count = 0;
+
+            var averageUserAge = 0;
+            //var averageUserAge = users.Average(x => x.Age);
+
+            Assert.AreEqual(18.44m, Math.Round((decimal)averageUserAge, 2));
+        }
 
         private List<User> GetUsers()
         {
