@@ -15,7 +15,6 @@ namespace CollectionsAndLinq
                 "washbasinphxDone", "jealouslewsomed", "rashtoexd", "iffybalgy",
                 "likebomb", "roadavoid", "malroXd"};
             var count = 0;
-
             //implementaton
             //foreach (var user in users)
             //{
