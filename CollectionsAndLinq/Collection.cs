@@ -49,6 +49,18 @@ namespace CollectionsAndLinq
             Assert.AreEqual(3, count);
         }
 
+        [Test]
+        public void Remove_Duplicate()
+        {
+            var users = new List<string>() { "malroXd", "dare", "roage",
+                "washbasinphxDone", "jealouslewsomed", "rashtoexd", "iffybalgy",
+                "likebomb", "roadavoid", "malroXd"};
+            //var count = 0;
+            users.Remove("malroXd");
+
+
+            Assert.AreEqual(10, users.Count());
+        }
 
         [Test]
         public void Get_Adoult_Users_List()
