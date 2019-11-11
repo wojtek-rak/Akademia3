@@ -16,10 +16,10 @@ namespace CollectionsAndLinq
                 "likebomb", "roadavoid", "malroXd"};
             var count = 0;
 
-            count =
-                users.Where(x => x.ToLower()
-                .Contains("xd"))
-                .Count();
+            //count =
+            //    users.Where(x => x.ToLower()
+            //    .Contains("xd"))
+            //    .Count();
 
             Assert.AreEqual(4, count);
         }
@@ -32,10 +32,10 @@ namespace CollectionsAndLinq
                 "likebomb", "roadavoid", "malroXd"};
             var count = 0;
 
-            count =
-                (from user in users
-                where user.ToLower().Contains("xd")
-                select user).Count();
+            //count =
+            //    (from user in users
+            //    where user.ToLower().Contains("xd")
+            //    select user).Count();
 
             Assert.AreEqual(4, count);
         }
@@ -53,18 +53,7 @@ namespace CollectionsAndLinq
             Assert.AreEqual(3, count);
         }
 
-        [Test]
-        public void Remove_Duplicate()
-        {
-            var users = new List<string>() { "malroXd", "dare", "roage",
-                "washbasinphxDone", "jealouslewsomed", "rashtoexd", "iffybalgy",
-                "likebomb", "roadavoid", "malroXd"};
-            //var count = 0;
-            users.Remove("malroXd");
 
-
-            Assert.AreEqual(10, users.Count());
-        }
 
         [Test]
         public void Get_Adult_Users_List()
