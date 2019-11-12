@@ -63,7 +63,7 @@ namespace CollectionsAndLinq
         }
 
         [Test]
-        public void Get_Adoult_Users_List()
+        public void Get_Adult_Users_List()
         {
             var users = GetUsers();
             var count = 0;
@@ -81,7 +81,7 @@ namespace CollectionsAndLinq
         }
 
         [Test]
-        public void Get_Specyfic_User()
+        public void Get_Specyific_User()
         {
             var users = GetUsers();
             var age = 0;
